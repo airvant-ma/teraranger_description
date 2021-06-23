@@ -1,9 +1,12 @@
 <?xml version="1.0"?>
 <robot name="teraranger_one" xmlns:xacro="http://www.ros.org/wiki/xacro">
 
-    <xacro:macro name="teraranger_one" params="multi_hub hub_id id x y z roll pitch yaw gaussian_noise">
+    <xacro:macro name="teraranger_one" params="multi_hub hub_id id x y z roll pitch yaw gaussian_noise parent:=base_hub_">
 
         <xacro:if value="${multi_hub}">
+
+            <xacro:property name="hub_parent" value="${parent}${hub_id}"/>
+
             <link name="hub_${hub_id}_base_range_${id}">
                 <visual>
                     <origin xyz="0 0 -0.005" rpy="0 0 0"/>
@@ -16,7 +19,7 @@
 
             <joint name="hub_${hub_id}_base_range_joint_${id}" type="fixed">
                 <origin xyz="${x} ${y} ${z}" rpy="${roll} ${pitch} ${yaw}"/>
-                <parent link="base_hub_${hub_id}"/>
+                <parent link="${hub_parent}"/>
                 <child link="hub_${hub_id}_base_range_${id}"/>
             </joint>
 
@@ -29,7 +32,7 @@
             </link>
             <joint name="inertial_joint_${hub_id}_base_range_joint_${id}" type="fixed">
               <origin xyz="0.0 0.0 0" rpy="0 0 0" />
-              <parent link="base_hub_${hub_id}"/>
+              <parent link="${hub_parent}"/>
               <child link="inertial_link_${hub_id}_base_range_joint_${id}"/>
             </joint>
 
@@ -84,7 +87,7 @@
 
             <joint name="base_range_joint_${id}" type="fixed">
                 <origin xyz="${x} ${y} ${z}" rpy="${roll} ${pitch} ${yaw}"/>
-                <parent link="base_hub"/>
+                <parent link="${parent}"/>
                 <child link="base_range_${id}"/>
             </joint>
 
@@ -97,7 +100,7 @@
             </link>
             <joint name="inertial_joint_base_range_joint_${id}" type="fixed">
               <origin xyz="0.0 0.0 0" rpy="0 0 0" />
-              <parent link="base_hub"/>
+              <parent link="${parent}"/>
               <child link="inertial_link_base_range_joint_${id}"/>
             </joint>
 

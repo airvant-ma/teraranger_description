@@ -6,6 +6,8 @@ Panels:
       Expanded:
         - /Global Options1
         - /Status1
+        - /TF1
+        - /TF1/Frames1
       Splitter Ratio: 0.7785714268684387
     Tree Height: 1115
   - Class: rviz/Selection
@@ -57,45 +59,11 @@ Visualization Manager:
       Frame Timeout: 15
       Frames:
         All Enabled: true
-        base_hub:
-          Value: true
         base_link:
           Value: true
         base_range_0:
           Value: true
-        base_range_1:
-          Value: true
-        base_range_2:
-          Value: true
-        base_range_3:
-          Value: true
-        base_range_4:
-          Value: true
-        base_range_5:
-          Value: true
-        base_range_6:
-          Value: true
-        base_range_7:
-          Value: true
-        hub_gyro_link:
-          Value: true
-        inertial_link:
-          Value: true
         inertial_link_base_range_joint_0:
-          Value: true
-        inertial_link_base_range_joint_1:
-          Value: true
-        inertial_link_base_range_joint_2:
-          Value: true
-        inertial_link_base_range_joint_3:
-          Value: true
-        inertial_link_base_range_joint_4:
-          Value: true
-        inertial_link_base_range_joint_5:
-          Value: true
-        inertial_link_base_range_joint_6:
-          Value: true
-        inertial_link_base_range_joint_7:
           Value: true
       Marker Scale: 0.30000001192092896
       Name: TF
@@ -104,43 +72,10 @@ Visualization Manager:
       Show Names: true
       Tree:
         base_link:
-          base_hub:
-            base_range_0:
-              {}
-            base_range_1:
-              {}
-            base_range_2:
-              {}
-            base_range_3:
-              {}
-            base_range_4:
-              {}
-            base_range_5:
-              {}
-            base_range_6:
-              {}
-            base_range_7:
-              {}
-            hub_gyro_link:
-              {}
-            inertial_link:
-              {}
-            inertial_link_base_range_joint_0:
-              {}
-            inertial_link_base_range_joint_1:
-              {}
-            inertial_link_base_range_joint_2:
-              {}
-            inertial_link_base_range_joint_3:
-              {}
-            inertial_link_base_range_joint_4:
-              {}
-            inertial_link_base_range_joint_5:
-              {}
-            inertial_link_base_range_joint_6:
-              {}
-            inertial_link_base_range_joint_7:
-              {}
+          base_range_0:
+            {}
+          inertial_link_base_range_joint_0:
+            {}
       Update Interval: 0
       Value: true
     - Alpha: 1
@@ -153,93 +88,16 @@ Visualization Manager:
         Expand Link Details: false
         Expand Tree: false
         Link Tree Style: Links in Alphabetic Order
-        base_hub:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
         base_link:
           Alpha: 1
           Show Axes: false
           Show Trail: false
-          Value: true
         base_range_0:
           Alpha: 1
           Show Axes: false
           Show Trail: false
           Value: true
-        base_range_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        base_range_7:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-          Value: true
-        hub_gyro_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
         inertial_link_base_range_joint_0:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_1:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_2:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_3:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_4:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_5:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_6:
-          Alpha: 1
-          Show Axes: false
-          Show Trail: false
-        inertial_link_base_range_joint_7:
           Alpha: 1
           Show Axes: false
           Show Trail: false
