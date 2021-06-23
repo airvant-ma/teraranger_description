@@ -27,7 +27,7 @@
                   <inertia ixx="1.2e-6" ixy="0" ixz="0" iyy="1.5e-6" iyz="0" izz="1.2e-6"/>
               </inertial>
             </link>
-            <joint name="inertial_joint_${hub_id}" type="fixed">
+            <joint name="inertial_joint_${hub_id}_base_range_joint_${id}" type="fixed">
               <origin xyz="0.0 0.0 0" rpy="0 0 0" />
               <parent link="base_hub_${hub_id}"/>
               <child link="inertial_link_${hub_id}_base_range_joint_${id}"/>
@@ -95,7 +95,7 @@
                   <inertia ixx="1.2e-6" ixy="0" ixz="0" iyy="1.5e-6" iyz="0" izz="1.2e-6"/>
               </inertial>
             </link>
-            <joint name="inertial_joint_${hub_id}" type="fixed">
+            <joint name="inertial_joint_base_range_joint_${id}" type="fixed">
               <origin xyz="0.0 0.0 0" rpy="0 0 0" />
               <parent link="base_hub"/>
               <child link="inertial_link_base_range_joint_${id}"/>
