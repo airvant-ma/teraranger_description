@@ -2,7 +2,9 @@
 # ROS package for URDF description of TeraRanger products by Terabee
 
 This package is a collection of URDF files of teraranger products:
-* [TeraRanger Tower](https://www.terabee.com/shop/lidar-tof-multi-directional-arrays/teraranger-tower/)
+* [TeraRanger One](https://www.terabee.com/shop/lidar-tof-multi-directional-arrays/teraranger-tower/)
+* [TeraRanger Evo](https://www.terabee.com/shop/lidar-tof-range-finders/teraranger-evo-60m/)
+* [TeraRanger Tower One](https://www.terabee.com/shop/lidar-tof-multi-directional-arrays/teraranger-tower/)
 * [TeraRanger Tower Evo](https://www.terabee.com/shop/lidar-tof-multi-directional-arrays/teraranger-tower-evo/)
 
 It is required for using these packages:
